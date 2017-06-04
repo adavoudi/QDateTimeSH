@@ -1,10 +1,6 @@
-# QDateTimeSH
-Add support of Solar Hijri date to QDateTime
-
-## Example
-```cpp
 #include <QApplication>
 #include <QDateTimeSH.h>
+#include <QDebug>
 #include <QMessageBox>
 
 int main(int argc, char *argv[])
@@ -22,4 +18,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
