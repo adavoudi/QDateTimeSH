@@ -43,8 +43,6 @@ QString QDateTimeSH::toString(const QString &format, bool isSolarHijri) const
     result.replace("ddd", WeekDayNames[date.dayOfWeek() - 1].mid(0, 3));
     result.replace("MMMM", MonthNames[date.month() - 1]);
     result.replace("MMM", MonthNames[date.month() - 1].mid(0, 3));
-    result.replace("yyyy", QString::number(date.year()));
-    result.replace("yy", QString::number(date.year()).mid(0, 3));
 
     result = date.toString(result);
     result = QDateTime::toString(result);
